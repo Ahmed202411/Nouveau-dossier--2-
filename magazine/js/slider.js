@@ -113,6 +113,14 @@ function loadApp() {
 							$(this).zoom('flipbook').turn('previous');
 
 						},
+						resize: function (event, scale, page, pageElement) {
+
+							if (scale == 1)
+								loadSmallPage(page, pageElement);
+							else
+								loadLargePage(page, pageElement);
+
+						},
 
 						zoomIn: function () {
 
