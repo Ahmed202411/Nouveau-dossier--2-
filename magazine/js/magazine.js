@@ -48,7 +48,7 @@ function loadPage(page, pageElement) {
 
 	// Load the page
 
-	img.attr('src', 'pages/' + page + '.jpg');
+	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '.jpg');
 
 	loadRegions(page, pageElement);
 
