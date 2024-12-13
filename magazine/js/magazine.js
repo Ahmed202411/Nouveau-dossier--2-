@@ -179,7 +179,7 @@ function loadLargePage(page, pageElement) {
 
 	// Loadnew page
 
-	img.attr('src', 'pages/' + page + '-large.jpg');
+	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '-large.jpg');
 }
 
 // Load small page
@@ -193,7 +193,7 @@ function loadSmallPage(page, pageElement) {
 	img.off('load');
 	// Loadnew page
 
-	img.attr('src', 'pages/' + page + '.jpg');
+	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '.jpg');
 }
 
 function disableControls(page) {
