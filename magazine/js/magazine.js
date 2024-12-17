@@ -50,7 +50,7 @@ function loadPage(page, pageElement) {
 
 	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '.jpg');
 
-	loadRegions(page, pageElement);
+	// loadRegions(page, pageElement);
 
 }
 
@@ -76,16 +76,16 @@ function zoomTo(event) {
 
 // Load regions
 
-function loadRegions(page, element) {
+// function loadRegions(page, element) {
 
-	$.getJSON('pages/' + page + '-regions.json').
-		done(function (data) {
+// 	$.getJSON('pages/' + page + '-regions.json').
+// 		done(function (data) {
 
-			$.each(data, function (key, region) {
-				addRegion(region, element);
-			});
-		});
-}
+// 			$.each(data, function (key, region) {
+// 				addRegion(region, element);
+// 			});
+// 		});
+// }
 
 // Add region
 
@@ -179,7 +179,7 @@ function loadLargePage(page, pageElement) {
 
 	// Loadnew page
 
-	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '-large.jpg');
+	img.attr('src', 'https://ahmed202411.github.io/Nouveau-dossier--2-/magazine/pages/' + page + '.jpg');
 }
 
 // Load small page
