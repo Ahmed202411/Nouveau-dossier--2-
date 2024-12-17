@@ -16,10 +16,10 @@ function loadApp() {
 				// Create the flipbook
 
 				flipbook.turn({
-					display: 'single',
+					display: window.innerWidth < 965 ? 'single' : 'double',
 					// Magazine width
 
-					width: 422,
+					width: window.innerWidth < 965 ? 461 : 922,
 
 					// Magazine height
 
