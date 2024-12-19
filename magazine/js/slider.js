@@ -14,12 +14,14 @@ function loadApp() {
 				$("#slider").slider();
 
 				// Create the flipbook
-
+				function isMobileDevice() {
+					return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+				}
 				flipbook.turn({
-					display: window.innerWidth < 965 ? 'single' : 'double',
+					display: isMobileDevice() ? 'single' : 'double',
 					// Magazine width
 
-					width: window.innerWidth < 965 ? 461 : 922,
+					width: isMobileDevice() ? 461 : 922,
 
 					// Magazine height
 
